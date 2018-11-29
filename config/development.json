@@ -1,0 +1,42 @@
+{
+  "env": "development",
+  "port": 4040,
+  "bodyLimit": "5mb",
+  "corsHeaders": ["Origin, X-Requested-With, Content-Type, Accept"],
+  "corsOrigin": ["*", "http://www.crictec.com"],
+  "database": {
+    "host": "0.0.0.0",
+    "port": "3306",
+    "user": "root",
+    "pass": "root",
+    "dbname": "eo"
+  },
+  "mysql": {
+    "dialect":"mysql",
+    "host": "0.0.0.0",
+    "port": "3306",
+    "username": "root",
+    "password": "root",
+    "dbname": "eo"
+  },
+  "redis": {
+    "host": "172.31.26.14",
+    "port": "6379",
+    "password": "Qw3r7y"
+  },
+  "jwt": {
+    "privateKey" : "someDevKey",
+    "tokenIssuer" : "Cricket Tech",
+    "tokenExpiry" : "60d",
+    "secret":"token-generate"
+  },
+  "hashKey": "SomeRandomKey",
+  "domainPrefix": "http://www.crictec.com",
+  "emailFrom" :"info@cartoonmango.com",
+  "amazonAWS":{
+    "accessKeyId":"",
+    "secretAccessKey":"",
+    "bucketName":""
+  },
+  "autoBackup": false
+}

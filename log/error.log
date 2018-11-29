@@ -1,0 +1,96 @@
+{timestamp: 2018-11-26T09:59:40.527Z, level: error, message: failed to connect to server [mongo:27017] on first connect [MongoNetworkError: getaddrinfo ENOTFOUND mongo mongo:27017]}
+{timestamp: 2018-11-26T10:07:07.005Z, level: error, message: failed to connect to server [mongo:27017] on first connect [MongoNetworkError: getaddrinfo ENOTFOUND mongo mongo:27017]}
+{timestamp: 2018-11-26T10:07:52.987Z, level: error, message: failed to connect to server [mongo:27017] on first connect [MongoNetworkError: getaddrinfo ENOTFOUND mongo mongo:27017]}
+{timestamp: 2018-11-26T10:09:26.766Z, level: error, message: failed to connect to server [mongo:27017] on first connect [MongoNetworkError: getaddrinfo ENOTFOUND mongo mongo:27017]}
+{timestamp: 2018-11-26T10:10:15.506Z, level: error, message: API not found}
+{timestamp: 2018-11-26T10:12:29.478Z, level: error, message: API not found}
+{timestamp: 2018-11-26T10:30:23.395Z, level: error, message: API not found}
+{timestamp: 2018-11-26T10:33:32.376Z, level: error, message: API not found}
+{timestamp: 2018-11-26T10:47:40.615Z, level: error, message: API not found}
+{timestamp: 2018-11-26T10:48:19.470Z, level: error, message: API not found}
+{timestamp: 2018-11-26T10:48:45.480Z, level: error, message: API not found}
+{timestamp: 2018-11-26T11:30:14.881Z, level: error, message: API not found}
+{timestamp: 2018-11-27T09:22:53.576Z, level: error, message: failed to connect to server [0.0.0.0:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 0.0.0.0:27017]}
+{timestamp: 2018-11-27T09:24:38.298Z, level: error, message: connection 0 to 0.0.0.0:3306 closed}
+{timestamp: 2018-11-27T13:29:28.005Z, level: error, message: API not found}
+{timestamp: 2018-11-27T13:29:53.457Z, level: error, message: API not found}
+{timestamp: 2018-11-28T06:21:11.507Z, level: error, message: validParam is not defined}
+{timestamp: 2018-11-28T06:22:01.892Z, level: error, message: validParam is not defined}
+{timestamp: 2018-11-28T06:34:32.317Z, level: error, message: validParam is not defined}
+{timestamp: 2018-11-28T06:46:35.515Z, level: error, message: Cannot read property 'validate' of undefined}
+{timestamp: 2018-11-28T06:52:51.750Z, level: error, message: Cannot read property 'validate' of undefined}
+{timestamp: 2018-11-28T07:04:41.816Z, level: error, message: autoFormat is not defined}
+{timestamp: 2018-11-28T07:06:30.836Z, level: error, message: Model.find is not a function}
+{timestamp: 2018-11-28T08:40:49.285Z, level: error, message: commonMysqlService is not defined}
+{timestamp: 2018-11-28T08:41:54.507Z, level: error, message: commonMysqlService is not defined}
+{timestamp: 2018-11-28T08:43:39.368Z, level: error, message: commonMysqlService is not defined}
+{timestamp: 2018-11-28T08:45:07.113Z, level: error, message: Model.findOne is not a function}
+{timestamp: 2018-11-28T09:59:32.055Z, level: error, message: Cannot read property 'findOne' of undefined}
+{timestamp: 2018-11-28T10:00:35.196Z, level: error, message: Cannot read property 'findOne' of undefined}
+{timestamp: 2018-11-28T10:02:10.490Z, level: error, message: Cannot read property 'findOne' of undefined}
+{timestamp: 2018-11-28T10:04:10.047Z, level: error, message: Cannot read property 'findOne' of undefined}
+{timestamp: 2018-11-28T10:07:25.524Z, level: error, message: Cannot read property 'findOne' of undefined}
+{timestamp: 2018-11-28T10:14:21.148Z, level: error, message: Cannot read property 'findOne' of undefined}
+{timestamp: 2018-11-29T06:31:16.736Z, level: error, message: Can't set headers after they are sent.}
+{timestamp: 2018-11-29T06:36:11.242Z, level: error, message: API not found}
+{timestamp: 2018-11-29T06:36:11.472Z, level: error, message: API not found}
+{timestamp: 2018-11-29T06:36:31.179Z, level: error, message: API not found}
+{timestamp: 2018-11-29T06:36:31.184Z, level: error, message: API not found}
+{timestamp: 2018-11-29T06:41:15.274Z, level: error, message: API not found}
+{timestamp: 2018-11-29T06:41:15.317Z, level: error, message: API not found}
+{timestamp: 2018-11-29T07:15:23.910Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-11-29T07:16:22.159Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-11-29T07:27:09.885Z, level: error, message: _service2.default.create is not a function}
+{timestamp: 2018-11-29T07:28:13.842Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-11-29T07:31:25.609Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-11-29T07:32:09.530Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-11-29T07:38:23.423Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-11-29T08:39:57.841Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-11-29T09:14:21.575Z, level: error, message: API not found}
+{timestamp: 2018-11-29T09:14:49.810Z, level: error, message: API not found}
+{timestamp: 2018-11-29T09:16:26.134Z, level: error, message: API not found}
+{timestamp: 2018-11-29T09:16:53.751Z, level: error, message: API not found}
+{timestamp: 2018-11-29T09:17:02.625Z, level: error, message: API not found}
+{timestamp: 2018-11-29T09:17:07.036Z, level: error, message: API not found}
+{timestamp: 2018-11-29T09:25:13.971Z, level: error, message: API not found}
+{timestamp: 2018-11-29T09:25:24.480Z, level: error, message: API not found}
+{timestamp: 2018-11-29T09:27:19.470Z, level: error, message: API not found}
+{timestamp: 2018-11-29T09:30:06.671Z, level: error, message: API not found}
+{timestamp: 2018-11-29T09:48:45.751Z, level: error, message: API not found}
+{timestamp: 2018-11-29T09:51:40.901Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-11-29T09:53:36.367Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-11-29T09:54:16.725Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-11-29T09:56:31.710Z, level: error, message: API not found}
+{timestamp: 2018-11-29T10:11:45.721Z, level: error, message: _service2.default.getAll is not a function}
+{timestamp: 2018-11-29T10:26:57.148Z, level: error, message: API not found}
+{timestamp: 2018-11-29T10:27:29.444Z, level: error, message: Cannot read property 'apply' of undefined}
+{timestamp: 2018-11-29T10:28:15.955Z, level: error, message: Cannot read property 'apply' of undefined}
+{timestamp: 2018-11-29T10:31:52.907Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-11-29T10:36:48.669Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-11-29T10:39:26.932Z, level: error, message: API not found}
+{timestamp: 2018-11-29T10:39:55.695Z, level: error, message: API not found}
+{timestamp: 2018-11-29T10:40:03.732Z, level: error, message: API not found}
+{timestamp: 2018-11-29T10:50:17.996Z, level: error, message: Cannot read property 'apply' of undefined}
+{timestamp: 2018-11-29T11:00:42.221Z, level: error, message: _service2.default.update is not a function}
+{timestamp: 2018-11-29T11:01:42.691Z, level: error, message: _service2.default.update is not a function}
+{timestamp: 2018-11-29T11:03:12.640Z, level: error, message: _service2.default.update is not a function}
+{timestamp: 2018-11-29T11:03:52.012Z, level: error, message: _service2.default.update is not a function}
+{timestamp: 2018-11-29T11:05:22.156Z, level: error, message: params is not defined}
+{timestamp: 2018-11-29T11:09:06.755Z, level: error, message: Cannot create property 'updatedAt' on string '1'}
+{timestamp: 2018-11-29T11:30:06.645Z, level: error, message: API not found}
+{timestamp: 2018-11-29T11:30:18.604Z, level: error, message: Cannot read property 'validate' of undefined}
+{timestamp: 2018-11-29T11:42:01.276Z, level: error, message: params is not defined}
+{timestamp: 2018-11-29T11:43:05.835Z, level: error, message: Cannot read property 'body' of undefined}
+{timestamp: 2018-11-29T11:43:51.903Z, level: error, message: Cannot read property 'body' of undefined}
+{timestamp: 2018-11-29T11:44:31.626Z, level: error, message: params is not defined}
+{timestamp: 2018-11-29T12:35:17.982Z, level: error, message: usernameExists is not defined}
+{timestamp: 2018-11-29T12:36:08.768Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-11-29T12:46:16.426Z, level: error, message: _service2.default.checkDuplicate is not a function}
+{timestamp: 2018-11-29T12:47:03.307Z, level: error, message: _service2.default.checkDuplicate is not a function}
+{timestamp: 2018-11-29T12:48:07.996Z, level: error, message: Unknown column 'user.checkParam' in 'where clause'}
+{timestamp: 2018-11-29T12:52:05.986Z, level: error, message: Invalid value { username: 'akram@gmail.com' }}
+{timestamp: 2018-11-29T12:52:42.694Z, level: error, message: Invalid value { username: 'akram@gmail.com' }}
+{timestamp: 2018-11-29T12:55:17.354Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-11-29T13:08:45.799Z, level: error, message: errKey is not defined}
+{timestamp: 2018-11-29T13:12:01.316Z, level: error, message: Invalid value { reference: 'akram@gmail.com' }}
+{timestamp: 2018-11-29T13:13:20.421Z, level: error, message: errKey is not defined}

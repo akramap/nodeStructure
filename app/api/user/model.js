@@ -1,7 +1,5 @@
-import db from "../../../config/mysql";
-// const db = require("../app/config/mysql");
-export default (queryInterface, Sequelize) => {
-  return queryInterface.define(
+export default (queryInterface, Sequelize) =>
+  queryInterface.define(
     "user",
     {
       name: { type: Sequelize.STRING },
@@ -10,4 +8,3 @@ export default (queryInterface, Sequelize) => {
     },
     { freezeTableName: true },
   );
-};

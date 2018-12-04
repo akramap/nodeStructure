@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import Sequelize from "sequelize";
-import config from "../../../config/development";
+import config from "../../config/development";
 // import Users from "./Users/user";
 const ROOT_DIR = path.dirname(require.main.filename);
 const APP_DIR = `${ROOT_DIR}/app`;
@@ -20,21 +20,21 @@ const operatorsAliases = {
   $like: Op.like,
 };
 
-// if (config.env) {
-//   sequelize = new Sequelize(process.env[config.env], config);
-// } else {
-// const databaseConf = config[process.env.env];
-sequelize = new Sequelize(
-  config.mysql.dbname,
-  config.mysql.username,
-  config.mysql.password,
-  {
-    host: config.mysql.host,
-    dialect: config.mysql.dialect,
-    operatorsAliases,
-  },
-);
-// }
+if (config.useEnvVariable) {
+  sequelize = new Sequelize(process.env[config.env], config);
+} else {
+  const databaseConf = config.mysql;
+  sequelize = new Sequelize(
+    databaseConf.dbname,
+    databaseConf.username,
+    databaseConf.password,
+    {
+      host: databaseConf.host,
+      dialect: databaseConf.dialect,
+      operatorsAliases,
+    },
+  );
+}
 
 const files = [];
 const sortDir = mainDir => {
@@ -77,6 +77,15 @@ Object.keys(db).forEach(modelName => {
 
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
+
+// console.log("db", db.comment, db.posts, db.user);
+
+// Relations
+db.comment.belongsTo(db.posts);
+db.posts.hasMany(db.comment);
+db.posts.belongsTo(db.user);
+db.user.hasMany(db.posts);
+
 // db.sequelize.sync({
 //   logging: false,
 // });

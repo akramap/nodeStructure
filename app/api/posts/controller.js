@@ -3,10 +3,9 @@ import validator from "./validator";
 import service from "./service";
 
 /**
- * Insert comment details.
- * @property {text} comment - comment by user.
+ * Insert post details
+ * @property {text} content - content posted by user.
  * @property {integer} userId - primary Id of User.
- * @property {integer} postId - prmary Id of posts
  * @returns {Object}
  */
 
@@ -17,7 +16,7 @@ async function create(body) {
   // fetch validated body from validData
   const validBody = validData.body;
 
-  // call create service  to insert data in comment table / to post the comment
+  // call create service  to insert data in post table/to post the contents.
   const result = await service.create(validBody);
 
   // throw error if result is not an object
@@ -28,11 +27,11 @@ async function create(body) {
 }
 
 /**
- * Get comment List
+ * Get posts List
  * @returns {Object}
  */
 async function list() {
-  // calling list service to fetch comment list
+  // calling list service to fetch post list
   const result = await service.list();
 
   // return result to control handler to send success response
@@ -40,18 +39,18 @@ async function list() {
 }
 
 /**
- * Delete comment list
- * @property {integer} params.id - comment Id.
+ * Delete  post list
+ * @property {integer} params.id - posts Id.
  * @returns {Object}
  */
 async function remove(params) {
   // Validating param
   const validParam = await validator.remove.validate({ params });
 
-  // calling remove service to delete the record
+  // calling remove service to delete the record.
   const result = await service.remove(validParam.params);
 
-  // throw error if result is not an object
+  // throw error if result is not an object.
   util.FilterErrorAndThrow(result);
 
   // return result to control handler to send success response
@@ -59,29 +58,27 @@ async function remove(params) {
 }
 
 /**
- *  get comment By Id
- * @property {integer} params.id - comment Id.
+ *  get post By Id
+ * @property {integer} params.id - post Id.
  * @returns {Object}
  */
 async function getById(params) {
   // Validating param
   const validParam = await validator.get.validate({ params });
 
-  // Getting comment details by id
+  // Getting post details by id by calling its service.
   const result = await service.findById(validParam.params);
 
-  // throw error if result is not an object
+  // throw error if result is not an object.
   util.FilterErrorAndThrow(result);
 
-  // return result to control handler to send success response
+  // return result to control handler to send success response.
   return result;
 }
 
 /**
- * @property {integer} params.id - comment  Id.
- * @property {string} comment - comment user.
+ * @property {text} content - contents posted by user.
  * @property {integer} userId - primary Id of User.
- * @property {integer} postId - prmary Id of posts
  * @returns {Object}
  */
 async function update(params, body) {
@@ -91,7 +88,7 @@ async function update(params, body) {
   // get id from params
   const { id } = await validParam.params;
 
-  // check for existence of  comment Object to be updated
+  // check for existence of  post Object to be updated
   const existingData = await service.findById({ id });
 
   // Throwing error if promise response has any error object
@@ -99,11 +96,9 @@ async function update(params, body) {
 
   // validating body
   const validData = await validator.update.validate({ body });
-
-  // fetching body from validData
   const validBody = await validData.body;
 
-  // Updating new data  to existing record
+  // Updating new data to record.
   const updatedData = await service.update(id, validBody);
 
   // throw error if result is not an object

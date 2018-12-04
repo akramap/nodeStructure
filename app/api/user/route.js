@@ -1,7 +1,7 @@
 import express from "express";
 import c from "../../../utils/controlHandler";
 import controller from "./controller";
-import regex from "../../helpers/validators/regex";
+// import regex from "../../helpers/validators/regex";
 
 const router = express.Router();
 
@@ -23,6 +23,6 @@ router
   // remove users (accessed at DELETE /api/user/:id)
   .delete(c(controller.remove, ({ params }) => [params]))
   // get users (accessed at GET /api/user/:id)
-  .get(c(controller.get, ({ params }) => [params]));
+  .get(c(controller.getById, ({ params }) => [params]));
 
 export default router;

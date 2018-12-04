@@ -38,6 +38,7 @@ export default {
   highlightTypes: ["normal", "wicket", "four", "six", "milestone"],
   // common
   statusTypes: ["active", "deleted"],
+  postStatusTypes: ["approved", "in review", "rejected"],
   sourceTypes: ["cricketapi", "opta", "cricviz"],
   feedSourceTypes: ["cricketapi", "opta"],
   predictionSourceTypes: ["cricviz"],

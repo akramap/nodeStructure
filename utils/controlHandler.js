@@ -5,7 +5,9 @@ const controlHandler = (promise, params) => async (req, res, next) => {
   const boundParams = params ? params(req, res, next) : [];
   try {
     const result = await promise(...boundParams);
+    // check for token in result.
     if (result.token) {
+      // if token exist in result,generate the cookie.
       return res
         .cookie("token", result.token)
         .status(result.status || 200)

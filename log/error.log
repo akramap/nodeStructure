@@ -94,3 +94,34 @@
 {timestamp: 2018-11-29T13:08:45.799Z, level: error, message: errKey is not defined}
 {timestamp: 2018-11-29T13:12:01.316Z, level: error, message: Invalid value { reference: 'akram@gmail.com' }}
 {timestamp: 2018-11-29T13:13:20.421Z, level: error, message: errKey is not defined}
+{timestamp: 2018-11-30T05:45:02.620Z, level: error, message: _commonMysqlService2.default.get is not a function}
+{timestamp: 2018-11-30T05:45:45.932Z, level: error, message: _commonMysqlService2.default.get is not a function}
+{timestamp: 2018-11-30T06:32:39.421Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-11-30T06:37:44.051Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-11-30T06:42:14.625Z, level: error, message: Cannot read property 'body' of undefined}
+{timestamp: 2018-11-30T07:24:09.972Z, level: error, message: Cannot read property 'validate' of undefined}
+{timestamp: 2018-11-30T07:24:47.217Z, level: error, message: Cannot read property 'validate' of undefined}
+{timestamp: 2018-11-30T07:27:18.618Z, level: error, message: validParams is not defined}
+{timestamp: 2018-11-30T07:33:15.268Z, level: error, message: validParams is not defined}
+{timestamp: 2018-11-30T07:33:36.547Z, level: error, message: params is not defined}
+{timestamp: 2018-11-30T07:35:16.112Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-11-30T07:35:40.306Z, level: error, message: params is not defined}
+{timestamp: 2018-11-30T09:52:17.403Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-11-30T09:59:31.938Z, level: error, message: _service2.default.create is not a function}
+{timestamp: 2018-11-30T10:33:02.819Z, level: error, message: Cannot read property 'create' of undefined}
+{timestamp: 2018-11-30T11:03:57.886Z, level: error, message: API not found}
+{timestamp: 2018-11-30T11:04:57.740Z, level: error, message: API not found}
+{timestamp: 2018-11-30T11:05:34.530Z, level: error, message: API not found}
+{timestamp: 2018-11-30T11:06:35.670Z, level: error, message: API not found}
+{timestamp: 2018-11-30T12:11:24.234Z, level: error, message: Cannot read property 'id' of undefined}
+{timestamp: 2018-11-30T12:12:26.084Z, level: error, message: Cannot read property 'id' of undefined}
+{timestamp: 2018-11-30T12:15:34.321Z, level: error, message: Cannot read property 'id' of undefined}
+{timestamp: 2018-11-30T12:16:50.671Z, level: error, message: Cannot read property 'id' of undefined}
+{timestamp: 2018-11-30T12:58:46.361Z, level: error, message: API not found}
+{timestamp: 2018-11-30T13:00:22.948Z, level: error, message: API not found}
+{timestamp: 2018-11-30T13:46:56.314Z, level: error, message: API not found}
+{timestamp: 2018-12-03T06:47:52.231Z, level: error, message: API not found}
+{timestamp: 2018-12-03T09:34:48.916Z, level: error, message: Incorrect integer value: 'e7c70f98-37a4-461f-b3b1-dc3f8d0e405d' for column 'id' at row 1}
+{timestamp: 2018-12-03T09:55:54.190Z, level: error, message: Incorrect integer value: 'd68878e6-8ce2-4d43-b72a-cc4f50ef346b' for column 'id' at row 1}
+{timestamp: 2018-12-03T09:57:49.329Z, level: error, message: Incorrect integer value: 'a0ec5ed8-ae10-4e7b-a578-19275ecee6a4' for column 'id' at row 1}
+{timestamp: 2018-12-03T10:20:03.518Z, level: error, message: API not found}

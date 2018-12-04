@@ -17,6 +17,7 @@ export default {
     .min(constants.minVeryLongStr)
     .max(constants.maxVeryLongStr),
   statusType: Joi.any().valid(constants.statusTypes),
+  postStatusType: Joi.any().valid(constants.postStatusTypes),
   validMysqlId: Joi.string()
     .regex(regex.mysqlIdRegex)
     .options({

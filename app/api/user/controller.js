@@ -42,15 +42,20 @@ async function create(body) {
 
   // define variable promiseList.
   const promiseList = [];
+  let hashPassword = {};
 
   // checking for username existence in users.
   if (validBody.username) {
     // Checking if record exist with same reference
     promiseList.push(service.findByUsername(validBody.username));
   }
-
   // Waiting for promises to finish
   const promiseListResp = await Promise.all(promiseList);
+  if (validBody.password) {
+    // encrypt the user Password
+    hashPassword = await service.encryptPassword(validBody);
+  }
+  validBody.password = hashPassword;
 
   // Throwing error if promise response has any error object
   util.FilterErrorAndThrow(promiseListResp);

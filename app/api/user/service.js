@@ -1,4 +1,9 @@
 import jwt from "jsonwebtoken";
+/* // import CryptoJS from "crypto-js";
+ import { SHA512 } from "crypto-js"; */
+
+// import nodejs crypto module.
+import crypto from "crypto";
 import response from "../../../localization/en";
 // import models list from database/index.
 import database from "../../database/index";
@@ -14,14 +19,16 @@ async function userLogin(params) {
     NOT_AUTHORIZED: response.NOT_AUTHORIZED,
     DOES_NOT_EXIST: response.DOES_NOT_EXIST,
   };
-
+  const { username } = params;
   // get users list by id.
-  const userObj = await database.user.findOne({ where: params });
+  const userObj = await database.user.findOne({ where: { username } });
 
   // check if user exist.
   if (userObj) {
+    // decrypt password.
+    const actualPassword = await decryptPassword(userObj.password);
     // matching existing password with the input password.
-    if (userObj.password === params.password) {
+    if (params.password === actualPassword) {
       // creating object for creation of jwt token.
       const payload = {
         data: userObj.password,
@@ -119,6 +126,34 @@ async function findByUsername(username) {
   // return the result to controller.
   return result;
 }
+
+/**
+ * encrpyt the password.
+ * @property {string} password- password of the user.
+ */
+async function encryptPassword({ password }) {
+  /* // encrypt user password using SHA512(crypto-js).
+  const hash = SHA512(password).toString(); */
+
+  // encrypt user password using crypto.
+  const algorithm = "aes-256-ctr";
+  const secret = "d6F3Efeq";
+  const cipher = crypto.createCipher(algorithm, secret);
+  let crypted = cipher.update(password, "utf8", "hex");
+  crypted += cipher.final("hex");
+  return crypted;
+}
+
+async function decryptPassword(password) {
+  const algorithm = "aes-256-ctr";
+  const secret = "d6F3Efeq";
+  const decipher = crypto.createDecipher(algorithm, secret);
+  let dec = decipher.update(password, "hex", "utf8");
+  dec += decipher.final("utf8");
+  console.log("dec", dec);
+  return dec;
+}
+
 export default {
   userLogin,
   create,
@@ -127,4 +162,6 @@ export default {
   findById,
   update,
   findByUsername,
+  encryptPassword,
+  decryptPassword,
 };

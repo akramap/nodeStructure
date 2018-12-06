@@ -31,7 +31,7 @@ async function userLogin(params) {
     if (params.password === actualPassword) {
       // creating object for creation of jwt token.
       const payload = {
-        data: userObj.password,
+        userObj,
       };
 
       // generating jwt token.

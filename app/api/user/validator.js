@@ -16,6 +16,8 @@ export default {
       name: commonValidator.normalStr.required(),
       username: commonValidator.normalStr.required(),
       password: commonValidator.normalStr.required(),
+      isAdmin: Joi.boolean(),
+      isUser: Joi.boolean(),
     }),
   }),
 

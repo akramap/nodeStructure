@@ -13,4 +13,5 @@ export default {
   UNABALE_TO_PROCESS_REQUEST: "Unable to process your request.",
   DB_WRITE_FAILED: "Something went wrong!",
   UNKNOWN_ERROR: "Something went wrong. Please try again.",
+  INVALID_USER: "Not a valid user",
 };

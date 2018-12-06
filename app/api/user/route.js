@@ -1,7 +1,8 @@
 import express from "express";
 import c from "../../../utils/controlHandler";
 import controller from "./controller";
-// import regex from "../../helpers/validators/regex";
+// import commonservice from "../../helpers/validators/regex";
+import commonMysqlService from "../../helpers/services/commonMysqlService";
 
 const router = express.Router();
 
@@ -10,6 +11,8 @@ router.route("/login").post(c(controller.login, ({ body }) => [body]));
 
 // user signup (accesssed at POST /api/user/signup)
 router.route("/signup").post(c(controller.create, ({ body }) => [body]));
+
+// router.use(c(commonMysqlService.isLoggedIn, ({ headers }) => [headers]));
 
 router
   .route("/")
@@ -23,6 +26,9 @@ router
   // remove users (accessed at DELETE /api/user/:id)
   .delete(c(controller.remove, ({ params }) => [params]))
   // get users (accessed at GET /api/user/:id)
-  .get(c(controller.getById, ({ params }) => [params]));
+  .get(
+    commonMysqlService.isLoggedIn,
+    c(controller.getById, ({ params }) => [params]),
+  );
 
 export default router;

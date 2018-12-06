@@ -1065,3 +1065,115 @@
 {timestamp: 2018-12-05T12:35:19.810Z, level: info, message: server started on port 4040 (development)}
 {timestamp: 2018-12-05T12:36:02.025Z, level: info, message: server started on port 4040 (development)}
 {timestamp: 2018-12-05T12:36:10.365Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T06:52:04.431Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T06:52:08.621Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-12-06T06:54:27.422Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T06:55:09.682Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-12-06T06:55:30.870Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T06:55:34.844Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-12-06T06:58:10.850Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T06:58:14.685Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-12-06T06:58:59.659Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T06:59:05.470Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-12-06T06:59:38.634Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T06:59:42.202Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-12-06T07:00:04.269Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T07:00:28.339Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-12-06T07:05:11.079Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T07:16:59.498Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T07:17:19.474Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T07:17:28.298Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T07:17:31.850Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T07:17:40.997Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T07:18:20.642Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T07:18:24.777Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-12-06T07:19:31.926Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T07:19:47.054Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T07:20:26.408Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T07:20:30.548Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-12-06T07:21:55.837Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T07:23:24.077Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T07:23:27.959Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-12-06T07:24:26.232Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T07:24:29.972Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-12-06T07:28:40.970Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T07:28:44.734Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-12-06T07:38:35.062Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T07:39:01.037Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T07:41:13.808Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-12-06T07:42:45.425Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T07:42:54.141Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-12-06T07:43:49.367Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T07:44:22.089Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T07:44:25.836Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-12-06T07:45:13.800Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T07:45:23.366Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T07:45:28.167Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-12-06T07:46:20.697Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T07:46:24.022Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-12-06T07:47:00.039Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T07:47:42.116Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T07:47:44.725Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T07:48:04.145Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T07:48:06.605Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-12-06T07:49:18.032Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-12-06T07:50:32.158Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T07:51:12.031Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-12-06T07:54:13.127Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T09:30:42.025Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-12-06T09:35:17.025Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T09:36:37.389Z, level: error, message: Cannot read property 'token' of undefined}
+{timestamp: 2018-12-06T09:37:17.197Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T09:38:59.884Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T10:34:44.976Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T10:50:36.820Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:00:29.044Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:01:49.619Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:02:19.158Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:03:44.379Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:04:25.827Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:04:51.538Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:05:31.938Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:05:38.162Z, level: error, message: secret or public key must be provided}
+{timestamp: 2018-12-06T11:06:27.896Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:06:31.422Z, level: error, message: secret or public key must be provided}
+{timestamp: 2018-12-06T11:07:22.970Z, level: error, message: secret or public key must be provided}
+{timestamp: 2018-12-06T11:07:31.034Z, level: error, message: secret or public key must be provided}
+{timestamp: 2018-12-06T11:08:22.874Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:08:26.353Z, level: error, message: secret or public key must be provided}
+{timestamp: 2018-12-06T11:10:14.418Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:10:19.488Z, level: error, message: secret or public key must be provided}
+{timestamp: 2018-12-06T11:11:02.494Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:11:06.263Z, level: error, message: invalid signature}
+{timestamp: 2018-12-06T11:13:08.776Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:13:12.609Z, level: error, message: invalid signature}
+{timestamp: 2018-12-06T11:14:09.831Z, level: error, message: invalid signature}
+{timestamp: 2018-12-06T11:15:18.189Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:15:33.095Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:15:37.363Z, level: error, message: token is not defined}
+{timestamp: 2018-12-06T11:16:16.169Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:18:12.043Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:18:46.449Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:19:43.435Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:20:03.832Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:21:00.635Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:21:04.897Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:21:54.667Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:22:25.721Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:23:28.755Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:27:26.234Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:27:33.685Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:28:02.092Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:28:45.499Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:28:59.510Z, level: error, message: API not found}
+{timestamp: 2018-12-06T11:29:09.256Z, level: error, message: API not found}
+{timestamp: 2018-12-06T11:30:06.309Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:30:44.199Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:31:20.450Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:32:06.332Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:32:26.429Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:33:31.565Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:34:04.264Z, level: error, message: Can't set headers after they are sent.}
+{timestamp: 2018-12-06T11:34:44.015Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T11:39:25.330Z, level: info, message: server started on port 4040 (development)}
+{timestamp: 2018-12-06T12:58:15.664Z, level: info, message: server started on port 4040 (development)}

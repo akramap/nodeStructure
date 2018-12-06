@@ -1,3 +1,6 @@
+import jwt from "jsonwebtoken";
+// import database configurations from config/development.json.
+import config from "../../../config/development";
 // import  response messages from localization/en file
 import response from "../../../localization/en";
 
@@ -92,4 +95,22 @@ async function checkDuplicate(Model, checkParam, autoFormat = true) {
   return true;
 }
 
-export default { create, remove, list, findById, update, checkDuplicate };
+async function isLoggedIn(req, res, next) {
+  const { token } = req.cookies;
+
+  const decoded = await jwt.verify(token, config.jwt.secret);
+  if (decoded.userObj.isAdmin === 1) {
+    return next();
+  }
+  return res.json({ message: response.INVALID_USER });
+}
+
+export default {
+  create,
+  remove,
+  list,
+  findById,
+  update,
+  checkDuplicate,
+  isLoggedIn,
+};

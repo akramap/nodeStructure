@@ -1,6 +1,7 @@
 import jwt from "jsonwebtoken";
 // import database configurations from config/development.json.
 import config from "../../../config/development";
+import db from "../../database/index";
 // import  response messages from localization/en file
 import response from "../../../localization/en";
 
@@ -41,6 +42,28 @@ async function findById(Model, id) {
   return { status: 200, data: result };
 }
 
+/**
+ *  get document of linked models By Id
+ * @property {integer} params.id - model Id.
+ * @property {string} modelFind - model from which records to be fetched.
+ * @property {string} modelInclude - model associated with modelFind
+ * @returns {document}.
+ */
+async function fetchByModels(Models, id) {
+  const result = await Models.permissions.findAll({
+    attributes: { exclude: ["createdAt", "updatedAt"] },
+    include: [
+      {
+        model: Models.roles,
+        include: [Models.user],
+      },
+    ],
+    where: {
+      id,
+    },
+  });
+  return { status: 200, data: result };
+}
 /**
  * Delete record by id
  * @property {integer} params.id - model Id.
@@ -95,13 +118,35 @@ async function checkDuplicate(Model, checkParam, autoFormat = true) {
   return true;
 }
 
-async function isLoggedIn(req, res, next) {
-  const { token } = req.cookies;
+/**
+ * To Authenticate through jwt for required API.
+ * @property {object} req - cookie,baseUrl,method are fetched from req object.
+ * @property {object} res.
+ * @property {*} next
+ */
 
+async function isLoggedIn(req, res, next) {
+  // get the cookies from request object.
+  const { token } = req.cookies;
+  // get the action like posts or comment.
+  const reqUrl = req.baseUrl.split("/");
+
+  // verify token using jwt.
   const decoded = await jwt.verify(token, config.jwt.secret);
-  if (decoded.userObj.isAdmin === 1) {
+
+  // fetch the permissions of the user.
+  const userPermisson = await db.permissions.findOne({
+    where: { userId: decoded.userObj.id },
+  });
+  // converting to string format.
+  const permissionString = JSON.stringify(
+    userPermisson.permission[reqUrl[2]][req.method],
+  );
+
+  if (permissionString === true) {
     return next();
   }
+
   return res.json({ message: response.INVALID_USER });
 }
 
@@ -113,4 +158,5 @@ export default {
   update,
   checkDuplicate,
   isLoggedIn,
+  fetchByModels,
 };

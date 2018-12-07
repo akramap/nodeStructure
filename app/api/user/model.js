@@ -1,5 +1,5 @@
-export default (queryInterface, Sequelize) =>
-  queryInterface.define(
+export default (queryInterface, Sequelize) => {
+  const User = queryInterface.define(
     "user",
     {
       name: { type: Sequelize.STRING },
@@ -10,3 +10,10 @@ export default (queryInterface, Sequelize) =>
     },
     { freezeTableName: true },
   );
+  User.associate = models => {
+    User.hasOne(models.roles, {
+      foreignKey: { allowNull: true },
+    });
+  };
+  return User;
+};

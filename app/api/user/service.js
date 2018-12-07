@@ -150,7 +150,6 @@ async function decryptPassword(password) {
   const decipher = crypto.createDecipher(algorithm, secret);
   let dec = decipher.update(password, "hex", "utf8");
   dec += decipher.final("utf8");
-  console.log("dec", dec);
   return dec;
 }
 

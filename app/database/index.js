@@ -77,17 +77,4 @@ Object.keys(db).forEach(modelName => {
 
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
-
-// console.log("db", db.comment, db.posts, db.user);
-
-// Relations
-db.comment.belongsTo(db.posts);
-db.posts.hasMany(db.comment);
-db.posts.belongsTo(db.user);
-db.user.hasMany(db.posts);
-
-// db.sequelize.sync({
-//   logging: false,
-// });
-
 export default db;
